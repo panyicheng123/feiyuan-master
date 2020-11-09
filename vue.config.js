@@ -18,10 +18,10 @@ module.exports = {
   chainWebpack: config => {
     config.resolve.alias
       .set('@', resolve('src'))
-      .set('components', resolve('src/components'))
-      .set('views', resolve('src/views'))
-      .set('router', resolve('src/router'))
-      .set('store', resolve('src/store'))
+      .set('_c', resolve('src/components'))
+      .set('_v', resolve('src/views'))
+      .set('_r', resolve('src/router'))
+      .set('_s', resolve('src/store'))
   },
   // 设为false打包时不生成.map文件
   productionSourceMap: false
